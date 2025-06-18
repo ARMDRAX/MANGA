@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+/* Impostazione globale */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Impedisce la barra orizzontale */
+}
+
+/* Header rosso */
+header {
+    background-color: #e60000; /* rosso acceso */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+/* Logo a sinistra */
+.logo {
+    color: yellow;
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+    font-weight: bold;
+    font-size: 1.8em;
+    user-select: none;
+}
+
+/* Contenitore link login/registrati/carrello a destra */
+.user-links {
+    display: flex;
+    align-items: center;
+}
+
+/* Link header */
+.header-link {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.header-link:hover {
+    background-color: yellow;
+    color: red;
+}
+
+/* Testo di benvenuto */
+.welcome-text {
+    margin-right: 10px;
+    font-weight: bold;
+    user-select: none;
+    cursor: default;
+}
+
+/* Barra di navigazione blu sotto header */
+.nav-bar {
+    background-color: #003366; /* blu scuro */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-bar a:hover {
+    background-color: #0055aa;
+}
+
+.container h2 {
+    color: red;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2.container  {
+    color: red;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.comics {
+    display: grid;
+    grid-template-columns: repeat(6, 220px); /* o quante colonne vuoi */
+    gap: 20px;
+    justify-content: center;
+    max-width: max-content;
+    margin: 0 auto;
+}
+
+
+
+.comic {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 190px; /* più piccolo per farci stare 6 in linea */
+    box-sizing: border-box;
+    height: 400px;
+}
+
+/* Immagine fumetto */
+.comic img {
+    width: 100%;
+    height: 250px;      /* fissa altezza */
+    object-fit: cover;  /* riempie e ritaglia l'immagine */
+    border-radius: 5px 5px 0 0;
+    display: block;
+}
+
+/* Titolo fumetto */
+.comic h3 {
+    margin: 10px 0;
+}
+
+/* Pulsante aggiungi al carrello */
+.add-to-cart {
+    background-color: yellow;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    margin-top: 10px;
+    
+}
+
+.add-to-cart:hover {
+    background: linear-gradient(135deg, red, #003366);
+    transform: scale(1.05);
+}
+
+/* Prezzo fumetto */
+.price {
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Messaggio carrello */
+#cart-message {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background: yellow;
+    color: red;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: none;
+    z-index: 9999;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    max-width: 220px;
+    text-align: center;
+}
+
+
+
+
+
+
+h2 {
+    text-align: left;
+    margin-left: 20px; /* spazio a sinistra */
+    margin-bottom: 15px; /* un po’ di spazio sotto il titolo */
+    font-weight: bold;
+    color: #333;
+}

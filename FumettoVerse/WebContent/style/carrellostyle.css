@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+/* Stile generale */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* Container principale */
+.container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Titolo pagina */
+.container h2 {
+    color: red;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Messaggio carrello vuoto */
+.container p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Box singolo fumetto */
+.comic {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comic img {
+    width: 120px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Contenitore per titolo e prezzo affiancati */
+.comic-info {
+    display: flex;
+    align-items: flex-end; /* titolo più alto, prezzo più basso */
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 15px;
+    margin-top: -35px;  /* solleva tutto verso l’alto */
+}
+
+.comic-info h3 {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: red;
+    line-height: 1.1;
+}
+
+/* Container prezzo e quantità */
+.price-quantity {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.price {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 4px; /* sposta leggermente il prezzo più in basso */
+}
+
+/* Input quantità */
+.quantity-input {
+    width: 50px;
+    padding: 4px 6px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+    top: 15px; /* sposta verso il basso */
+}
+
+/* Totale carrello */
+.container h3:last-of-type {
+    text-align: right;
+    font-size: 1.5em;
+    color: red;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+/* Contenitore bottoni Aggiorna e Rimuovi allineati */
+.buttons-inline {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: auto; /* spinge i bottoni a destra */
+}
+
+/* Rimuove margini interni dei form per allineare i bottoni */
+.update-form, .remove-form {
+    margin: 0;
+}
+
+/* Bottoni Aggiorna e Rimuovi */
+.update-btn, .remove-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-family: 'Comic Sans MS', cursive;
+    user-select: none;
+    min-width: 80px;
+    text-align: center;
+}
+
+.update-btn:hover, .remove-btn:hover {
+    background: linear-gradient(135deg, red, #003366);
+    transform: scale(1.05);
+}
+
+/* Bottoni checkout e svuota carrello */
+.checkout-btn, .clear-cart-btn {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px yellow;
+    transition: background 0.3s ease, transform 0.2s ease;
+    user-select: none;
+}
+
+.checkout-btn:hover, .clear-cart-btn:hover {
+    background: linear-gradient(135deg, red, #003366);
+    transform: scale(1.05);
+}
+
+/* Contenitore bottoni centrati */
+.buttons-container {
+    display: flex;
+    gap: 20px; /* spazio orizzontale */
+    justify-content: center; /* centrati orizzontalmente */
+    margin-top: 20px;
+}
+

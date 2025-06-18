@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+/* Stile body e layout generale */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* puoi anche scegliere un colore più soft */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Header per logout (simile a homepage ma semplificato) */
+header {
+    background-color: red;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    font-size: 1.1em;
+}
+
+header a:hover {
+    background-color: yellow;
+    color: red;
+}
+
+/* Form login e register */
+
+form {
+    background-color: #f9f9f9;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+    width: 320px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h2 {
+    color: red;
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+button {
+    margin-top: 20px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ffd700; /* giallo più scuro */
+}
+
+p {
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+p a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Messaggi di errore */
+.error-message {
+    color: red;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
