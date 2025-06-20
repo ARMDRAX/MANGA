@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "UTF-8";
 
 /* Hero section */
@@ -81,3 +82,190 @@
     background: linear-gradient(135deg, red, #003366);
     transform: scale(1.05);
 }
+=======
+@charset "UTF-8";
+
+/* Impostazione globale */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Impedisce la barra orizzontale */
+}
+
+/* Header rosso */
+header {
+    background-color: #e60000; /* rosso acceso */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+/* Logo a sinistra */
+.logo {
+    color: yellow;
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+    font-weight: bold;
+    font-size: 1.8em;
+    user-select: none;
+}
+
+/* Contenitore link login/registrati/carrello a destra */
+.user-links {
+    display: flex;
+    align-items: center;
+}
+
+/* Link header */
+.header-link {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.header-link:hover {
+    background-color: yellow;
+    color: red;
+}
+
+/* Testo di benvenuto */
+.welcome-text {
+    margin-right: 10px;
+    font-weight: bold;
+    user-select: none;
+    cursor: default;
+}
+
+
+
+/* Contenitore pagina */
+.container {
+    padding: 20px;
+}
+
+/* Griglia fumetti */
+.comics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 fumetti in linea fissa */
+    gap: 20px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Singolo fumetto */
+.comic {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 220px;
+}
+
+/* Immagine fumetto */
+.comic img {
+    width: 100%;
+    height: 300px;      /* fissa altezza */
+    object-fit: cover;  /* riempie e ritaglia l'immagine */
+    border-radius: 5px 5px 0 0;
+    display: block;
+}
+
+/* Titolo fumetto */
+.comic h3 {
+    margin: 10px 0;
+}
+
+/* Pulsante aggiungi al carrello */
+.add-to-cart {
+  background-color: red;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px yellow;
+    transition: background 0.3s ease, transform 0.2s ease;
+    user-select: none;
+}
+
+.add-to-cart:hover {
+    background: linear-gradient(135deg, red, #003366);
+    transform: scale(1.05);
+}
+
+/* Prezzo fumetto */
+.price {
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Messaggio carrello */
+#cart-message {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background: yellow;
+    color: red;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: none;
+    z-index: 9999;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    max-width: 220px;
+    text-align: center;
+}
+
+.hero-section {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero-section img {
+    width: 50%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+.consigliati-title {
+    text-align: center;
+    color: red;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+
+
+
+>>>>>>> 6c23e22ce354c2340ecf7d1bf4dcb52de023e73a
