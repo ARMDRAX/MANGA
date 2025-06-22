@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+/* Hero section */
+.hero-section {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero-section img {
+    width: 90%;
+    max-height: 650px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+/* Titolo "I migliori" */
+.consigliati-title {
+    text-align: center;
+    color: red;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Griglia della homepage: 4 colonne */
+.comics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card fumetto */
+.comic {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 220px;
+}
+
+/* Immagine fumetto */
+.comic img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+    display: block;
+}
+
+/* Stile SPECIALE del pulsante solo per homepage */
+.index-page .add-to-cart {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px yellow;
+    transition: background 0.3s ease, transform 0.2s ease;
+    user-select: none;
+}
+
+.index-page .add-to-cart:hover {
+    background: linear-gradient(135deg, red, #003366);
+    transform: scale(1.05);
+}
