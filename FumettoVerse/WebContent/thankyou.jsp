@@ -5,7 +5,11 @@
 <html>
 <head>
     <title>Grazie per il tuo ordine!</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="styles/checkoutstyle.css">
+=======
+    <link rel="stylesheet" href="style/checkoutstyle.css">
+>>>>>>> a365fcfeb0018ec9b95aa9c4e6a8aa230cf35c24
 </head>
 <body>
     <div class="thankyou-container">

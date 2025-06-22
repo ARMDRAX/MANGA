@@ -37,7 +37,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Elimina Fumetto</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="<%= request.getContextPath() %>/styles/adminstyle.css">
+=======
+    <link rel="stylesheet" href="<%= request.getContextPath() %>/style/adminstyle.css">
+>>>>>>> a365fcfeb0018ec9b95aa9c4e6a8aa230cf35c24
 </head>
 <body>
 
@@ -50,8 +54,12 @@
         <input type="hidden" name="id" value="<%= id %>">
 
         <button type="submit">Elimina</button>
+<<<<<<< HEAD
         <a href="<%= request.getContextPath() %>/admin/catalog.jsp" class="cancel-link">Annulla</a>
 
+=======
+        <a href="/admin/catalog.jsp" class="cancel-link">Annulla</a>
+>>>>>>> a365fcfeb0018ec9b95aa9c4e6a8aa230cf35c24
     </form>
 </div>
 

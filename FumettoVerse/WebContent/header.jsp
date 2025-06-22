@@ -11,8 +11,13 @@
 <head>
     <meta charset="UTF-8">
     <title>FumettoVerse</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/homepage.css">
+=======
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/homepage.css">
+>>>>>>> a365fcfeb0018ec9b95aa9c4e6a8aa230cf35c24
 </head>
 <body>
 <header>

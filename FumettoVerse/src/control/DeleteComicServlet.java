@@ -31,9 +31,13 @@ public class DeleteComicServlet extends HttpServlet {
             ComicDAO dao = new ComicDAO();
             dao.deleteComic(id);
 
+<<<<<<< HEAD
             response.sendRedirect(request.getContextPath() + "/admin/catalog.jsp?deleted=1");
 
 
+=======
+            response.sendRedirect("catalog.jsp");
+>>>>>>> a365fcfeb0018ec9b95aa9c4e6a8aa230cf35c24
 
         } catch (Exception e) {
             e.printStackTrace();
