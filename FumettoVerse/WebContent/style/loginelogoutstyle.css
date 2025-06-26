@@ -1,0 +1,233 @@
+<<<<<<< HEAD
+@charset "UTF-8";
+
+/* Stile specifico per login/logout */
+
+.login-form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+.login-form input[type="submit"] {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-form {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"],
+.login-form input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.login-form input[type="email"]:focus,
+.login-form input[type="password"]:focus,
+.login-form input[type="text"]:focus {
+  border-color: #e60000;
+  outline: none;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #e60000;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #b30000;
+}
+
+.login-form p.error-message {
+  color: red;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.login-form p.register-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-form p.register-link a {
+  color: #e60000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-form p.register-link a:hover {
+  text-decoration: underline;
+}
+=======
+@charset "UTF-8";
+
+/* Stile body e layout generale */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* puoi anche scegliere un colore più soft */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Header per logout (simile a homepage ma semplificato) */
+header {
+    background-color: red;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    font-size: 1.1em;
+}
+
+header a:hover {
+    background-color: yellow;
+    color: red;
+}
+
+/* Form login e register */
+
+form {
+    background-color: #f9f9f9;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+    width: 320px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h2 {
+    color: red;
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+button {
+    margin-top: 20px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ffd700; /* giallo più scuro */
+}
+
+p {
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+p a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Messaggi di errore */
+.error-message {
+    color: red;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+>>>>>>> 6c23e22ce354c2340ecf7d1bf4dcb52de023e73a

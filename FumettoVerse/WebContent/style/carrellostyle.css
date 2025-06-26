@@ -1,0 +1,286 @@
+<<<<<<< HEAD
+@charset "UTF-8";
+
+/* Container principale del carrello */
+.cart-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cart-container h2 {
+    color: red;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* Ogni fumetto nel carrello in orizzontale */
+.cart-item {
+    display: flex;
+    align-items: flex-start;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+/* Immagine del fumetto */
+.cart-item img {
+    width: 160px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Info accanto all’immagine */
+.cart-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart-info h3 {
+    margin: 0 0 10px;
+    color: red;
+    font-size: 22px;
+}
+
+.price {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Sezione con quantità e bottoni affiancati */
+.cart-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+/* Input quantità */
+.quantity-input {
+    width: 60px;
+    padding: 6px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Bottoni carrello */
+.update-btn,
+.remove-btn,
+.checkout-btn,
+.clear-cart-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.update-btn:hover,
+.remove-btn:hover,
+.checkout-btn:hover,
+.clear-cart-btn:hover {
+    background-color: #cc0000;
+    transform: scale(1.03);
+}
+
+/* Totale */
+.cart-total {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Bottoni sotto al carrello */
+.buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 10px;
+}
+=======
+@charset "UTF-8";
+
+/* Stile generale */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* Container principale */
+.container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Titolo pagina */
+.container h2 {
+    color: red;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Messaggio carrello vuoto */
+.container p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Box singolo fumetto */
+.comic {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comic img {
+    width: 120px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Contenitore per titolo e prezzo affiancati */
+.comic-info {
+    display: flex;
+    align-items: flex-end; /* titolo più alto, prezzo più basso */
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 15px;
+    margin-top: -35px;  /* solleva tutto verso l’alto */
+}
+
+.comic-info h3 {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: red;
+    line-height: 1.1;
+}
+
+/* Container prezzo e quantità */
+.price-quantity {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.price {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 4px; /* sposta leggermente il prezzo più in basso */
+}
+
+/* Input quantità */
+.quantity-input {
+    width: 50px;
+    padding: 4px 6px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+    top: 15px; /* sposta verso il basso */
+}
+
+/* Totale carrello */
+.container h3:last-of-type {
+    text-align: right;
+    font-size: 1.5em;
+    color: red;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+/* Contenitore bottoni Aggiorna e Rimuovi allineati */
+.buttons-inline {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: auto; /* spinge i bottoni a destra */
+}
+
+/* Rimuove margini interni dei form per allineare i bottoni */
+.update-form, .remove-form {
+    margin: 0;
+}
+
+/* Bottoni Aggiorna e Rimuovi */
+.update-btn, .remove-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-family: 'Comic Sans MS', cursive;
+    user-select: none;
+    min-width: 80px;
+    text-align: center;
+}
+
+.update-btn:hover, .remove-btn:hover {
+    background: linear-gradient(135deg, red, #003366);
+    transform: scale(1.05);
+}
+
+/* Bottoni checkout e svuota carrello */
+.checkout-btn, .clear-cart-btn {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px yellow;
+    transition: background 0.3s ease, transform 0.2s ease;
+    user-select: none;
+}
+
+.checkout-btn:hover, .clear-cart-btn:hover {
+    background: linear-gradient(135deg, red, #003366);
+    transform: scale(1.05);
+}
+
+/* Contenitore bottoni centrati */
+.buttons-container {
+    display: flex;
+    gap: 20px; /* spazio orizzontale */
+    justify-content: center; /* centrati orizzontalmente */
+    margin-top: 20px;
+}
+
+>>>>>>> 6c23e22ce354c2340ecf7d1bf4dcb52de023e73a
